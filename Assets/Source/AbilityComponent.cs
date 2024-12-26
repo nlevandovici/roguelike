@@ -2,15 +2,38 @@ using UnityEngine;
 
 public class AbilityComponent : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField]
+    private Ability _ability;
+
+    [SerializeField]
+    private AbilityModuleComponent[] _modules;
+
+
+
+    public void Setup(Ability ability, AbilityModuleComponent[] modules)
     {
-        
+        _ability = ability;
+
+        _modules = modules;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Activate()
     {
-        
+        SetActive(true);
+    }
+
+    public void Deactivate()
+    {
+        SetActive(false);
+    }
+
+    private void SetActive(bool active)
+    {
+        enabled = active;
+
+        for(int i = 0; i < _modules.Length; i++)
+        {
+            _modules[i].enabled = active;
+        }
     }
 }

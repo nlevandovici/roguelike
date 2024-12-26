@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf83c3e0626972f4d9c35c2ce403279c, type: 3}
+  m_Name: RangeAbility
+  m_EditorClassIdentifier: 
+  _name: Ability
+  _modules:
+  - {fileID: 11400000, guid: 6d3942587b335834899124857e7e8503, type: 2}
+  - {fileID: 11400000, guid: 8dea2412fecd1744e814b4ff6e47a479, type: 2}
+  - {fileID: 11400000, guid: a9aa6519be6ae5447be625ec7a379a4b, type: 2}
+  _duration: 0
+  _recharge: 3

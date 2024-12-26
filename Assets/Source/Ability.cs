@@ -68,4 +68,25 @@ public class Ability : ScriptableObject
             _recharge = value;
         }
     }
+
+
+
+    public virtual AbilityComponent AddAbility(GameObject gameObject)
+    {
+        return gameObject.AddComponent<AbilityComponent>();
+    }
+
+    public virtual AbilityModuleComponent[] AddModules(GameObject gameObject)
+    {
+        AbilityModuleComponent[] modules = new AbilityModuleComponent[_modules.Length];
+
+        for(int i = 0; i < _modules.Length; i++)
+        {
+            modules[i] = _modules[i].AddModule(gameObject);
+
+            modules[i].Setup(_modules[i]);
+        }
+
+        return modules;
+    }
 }

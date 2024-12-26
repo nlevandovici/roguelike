@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AnimationAbilityModuleComponent : MonoBehaviour
+public class AnimationAbilityModuleComponent : AbilityModuleComponent
 {
     
 }

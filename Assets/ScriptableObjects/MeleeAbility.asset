@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf83c3e0626972f4d9c35c2ce403279c, type: 3}
+  m_Name: MeleeAbility
+  m_EditorClassIdentifier: 
+  _name: Ability
+  _modules:
+  - {fileID: 11400000, guid: 6d3942587b335834899124857e7e8503, type: 2}
+  - {fileID: 11400000, guid: 8dea2412fecd1744e814b4ff6e47a479, type: 2}
+  - {fileID: 11400000, guid: e6236becb021f724a8dd14afb2e808c4, type: 2}
+  - {fileID: 11400000, guid: ad8b42e4a7aeec64e96f228ab7e851b7, type: 2}
+  _duration: 0
+  _recharge: 1

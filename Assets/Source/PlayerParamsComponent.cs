@@ -3,6 +3,9 @@ using UnityEngine;
 public class PlayerParamsComponent : MonoBehaviour
 {
     [SerializeField]
+    private PlayerParams _playerParams;
+
+    [SerializeField]
     private float _health = 0f;
 
     [SerializeField]
@@ -66,6 +69,13 @@ public class PlayerParamsComponent : MonoBehaviour
         {
             _energy = value;
         }
+    }
+
+
+
+    public void Setup(PlayerParams playerParams)
+    {
+        _playerParams = playerParams;
     }
 
 
